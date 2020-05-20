@@ -19,6 +19,9 @@ const ProfileImage = styled.div`
   left: 50%;
   transform: translateX(-50%);
   top: -50px;
+  .gatsby-image-wrapper {
+    border-radius: 50%;
+  }
   picture {
     img {
       border-radius: 50%;

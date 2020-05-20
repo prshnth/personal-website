@@ -30,7 +30,7 @@ const Image = () => {
     <Img
       fixed={data.placeholderImage.childImageSharp.fixed}
       alt="Prashanth Reddy"
-      fadeIn="true"
+      durationFadeIn={0}
     />
   )
 }
