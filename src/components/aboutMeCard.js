@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "./image"
 import Tabs from "./tabContainer"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
@@ -22,12 +21,10 @@ const ProfileImage = styled.div`
   .gatsby-image-wrapper {
     border-radius: 50%;
   }
-  picture {
-    img {
-      border-radius: 50%;
-      border: 2px solid #d5d0e5;
-      padding: 3px;
-    }
+  img {
+    border-radius: 50%;
+    border: 2px solid #d5d0e5;
+    padding: 3px;
   }
 `
 
@@ -46,7 +43,12 @@ const Location = styled.div`
 const AboutMeCard = () => (
   <Container>
     <ProfileImage>
-      <Image />
+      <img
+        src="https://lh3.googleusercontent.com/a-/AOh14GgHX9tWS3H9xNTQbiuDmIP3Wu8rjwbP_Z5yMn7xVQ"
+        alt="prashanth"
+        width="100"
+        height="100"
+      />
     </ProfileImage>
     <Description>
       Prashanth Reddy Kuchanpally
