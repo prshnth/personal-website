@@ -17,6 +17,10 @@ export default function Template({
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 750px;
+    @media (max-width: 400px) {
+      width: 320px;
+    }
   `
   return (
     <Layout>
@@ -25,9 +29,7 @@ export default function Template({
         <div>
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </BlogContainer>
     </Layout>

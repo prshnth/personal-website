@@ -12,7 +12,7 @@ const BlogCardContainer = styled(Link)`
   box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   @media (max-width: 400px) {
-    width: 300px;
+    width: 320px;
   }
 `
 

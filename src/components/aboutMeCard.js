@@ -8,7 +8,10 @@ const Container = styled.div`
   margin: 0 auto;
   box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 0.4);
   position: relative;
-  max-width: 750px;
+  width: 600px;
+  @media (max-width: 400px) {
+    width: 320px;
+  }
 `
 
 const ProfileImage = styled.div`

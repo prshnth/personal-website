@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
@@ -28,7 +27,7 @@ const NavLink = styled(Link)`
   }
 `
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   return (
     <NavContainer>
       <NavLink to="/" activeClassName="active">{`Home`}</NavLink>
@@ -36,14 +35,6 @@ const Header = ({ siteTitle }) => {
       <NavLink to="/blog" activeClassName="active">{`Blog`}</NavLink>
     </NavContainer>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

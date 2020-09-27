@@ -1,6 +1,5 @@
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   margin: 0;
@@ -12,4 +11,5 @@ body {
 }
 * {
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }

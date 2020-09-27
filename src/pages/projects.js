@@ -1,39 +1,56 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjectCard from "../components/projectCard"
 
 const ProjectsContainer = styled.div`
-  background-color: #1d1d34;
-  color: #d5d0e5;
-  padding: 20px;
-  width: 600px;
-  margin: 10px auto;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 0.4);
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  @media (max-width: 400px) {
-    width: 300px;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `
+
+const data = [
+  {
+    title: "Race Entries",
+    points: [
+      "Application where Admins can create a new race and participants can enter.",
+      "FullStack Architecture",
+      "React, Hooks, Context API, React Router",
+      "Firebase Authentication & Firestore DB",
+      "Mobile first design and implementation",
+    ],
+    links: {
+      demo: "https://race-entries.herokuapp.com",
+      code: "https://github.com/prshnth/race-entries",
+    },
+  },
+  {
+    title: "Blog Posts",
+    points: [
+      "Application where users can login and publish posts and read other posts",
+      "FullStack Architecture",
+      "Node.js, MongoDB, Express.js, React, Redux, Redux Thunk, Redux Form",
+      "Google OAuth",
+      "Mobile first design and implementation",
+    ],
+    links: {
+      demo: "https://blog-posts-mern-stack.herokuapp.com",
+      code: "https://github.com/prshnth/mern-blog-posts",
+    },
+  },
+]
 
 const Projects = () => {
   return (
     <Layout>
       <SEO title="Projects" />
       <ProjectsContainer>
-        <p>
-          Hey There! I'm in the process of adding my GitHub projects in this
-          page. Coming very soon!
-        </p>
-        <Link to="/">Go back to the homepage</Link>
+        {data.map(project => (
+          <ProjectCard project={project} />
+        ))}
       </ProjectsContainer>
     </Layout>
   )
