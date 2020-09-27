@@ -19,8 +19,6 @@ import styled from "styled-components"
 const Container = styled.div`
   display: flex;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
   padding: 120px 20px 20px;
   overflow-x: hidden;
   flex-direction: column;

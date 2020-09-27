@@ -4,6 +4,8 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(135deg, #6b46c1 0%, #74a8c3 100%);
