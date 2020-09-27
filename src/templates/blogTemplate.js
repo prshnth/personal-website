@@ -15,18 +15,17 @@ export default function Template({
     align-items: center;
     justify-content: center;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 5px 5px 10px rgba(0, 0, 0, 0.2);
   `
   return (
     <Layout>
       <SEO title={frontmatter.title} />
       <BlogContainer>
-        <div className="blog-post">
+        <div>
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
           <div
-            className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

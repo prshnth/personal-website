@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Tabs from "./tabContainer"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 const Container = styled.div`
   background-color: #1d1d34;
@@ -29,15 +27,10 @@ const ProfileImage = styled.div`
 `
 
 const Description = styled.p`
-  padding-top: 60px;
+  padding-top: 40px;
   text-align: center;
   color: #d5d0e5;
   font-weight: bold;
-`
-
-const Location = styled.div`
-  font-size: 16px;
-  font-weight: normal;
 `
 
 const AboutMeCard = () => (
@@ -50,12 +43,7 @@ const AboutMeCard = () => (
         height="100"
       />
     </ProfileImage>
-    <Description>
-      Prashanth Reddy Kuchanpally
-      <Location>
-        <FontAwesomeIcon icon={faMapMarkerAlt} /> Webster, New York
-      </Location>
-    </Description>
+    <Description>Prashanth Reddy Kuchanpally</Description>
     <Tabs />
   </Container>
 )

@@ -6,10 +6,9 @@ import styled from "styled-components"
 const NavContainer = styled.header`
   display: flex;
   position: fixed;
-  width: 100vw;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px;
   top: 0;
   right: 0;
 `

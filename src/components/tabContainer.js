@@ -16,6 +16,7 @@ const TabButton = styled.button`
   padding: 5px 15px;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 14px;
   outline: none;
   box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 1);
   &[aria-selected="true"] {
@@ -24,7 +25,7 @@ const TabButton = styled.button`
 `
 
 const TabPanel = styled.div`
-  padding: 30px;
+  padding: 20px;
   min-height: 200px;
   color: #d5d0e5;
 `
@@ -77,9 +78,10 @@ const Tabs = () => {
         hidden={selectedTab !== "websiteStack"}
       >
         <p>
-          Here is a complete list of frameworks and technologies I used to build
-          my website, more coming very soon!
+          I built this Website with Gatsby.js which comes with React and
+          GraphQL.
         </p>
+        <p>For styling I used styled-components.</p>
       </TabPanel>
       <TabPanel
         role="tabpanel"
