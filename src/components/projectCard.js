@@ -20,6 +20,9 @@ const Container = styled.div`
     align-items: center;
     display: flex;
     margin: 5px 0;
+    img {
+      flex: 0 0 auto;
+    }
   }
   .project-title {
     text-align: center;

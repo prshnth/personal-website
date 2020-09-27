@@ -48,8 +48,8 @@ const Projects = () => {
     <Layout>
       <SEO title="Projects" />
       <ProjectsContainer>
-        {data.map(project => (
-          <ProjectCard project={project} />
+        {data.map((project, index) => (
+          <ProjectCard key={index} project={project} />
         ))}
       </ProjectsContainer>
     </Layout>
