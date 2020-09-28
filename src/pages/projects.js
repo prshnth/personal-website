@@ -23,8 +23,8 @@ const data = [
       "Mobile first design and implementation",
     ],
     links: {
-      demo: "https://race-entries.herokuapp.com",
-      code: "https://github.com/prshnth/race-entries",
+      demo: "https://www.raceapp.prshnthrddy.com/",
+      code: "https://github.com/prshnth/race-entries-static",
     },
   },
   {
