@@ -61,7 +61,7 @@ const Tabs = () => {
           role="tab"
           id="resume"
         >
-          <a href='/prashanth-reddy-resume.pdf' target='_blank' rel="noreferrer">Resume</a>
+          <a href='/resume' target='_blank' rel="noreferrer">Resume</a>
         </TabButton>
       </TabList>
       <TabPanel
