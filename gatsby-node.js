@@ -37,9 +37,4 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
-
-  createPage({
-    path: `/prashanth-reddy-resume.pdf`,
-    component: resumeContainer
-  })
 }
