@@ -10,7 +10,7 @@ const ResumeContainer = styled.div`
   display: flex;
 `
 const Resume = styled.iframe`
-  flex: 1 1 auto;
+  width: 100%;
 `
 
 export default () => {

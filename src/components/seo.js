@@ -19,6 +19,10 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            website
+            social {
+              twitter
+            }
           }
         }
       }
@@ -49,7 +53,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: site.siteMetadata.website,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.website,
+        },
+        {
+          property: `og:image`,
+          content: `https://lh3.googleusercontent.com/a-/AOh14GgHX9tWS3H9xNTQbiuDmIP3Wu8rjwbP_Z5yMn7xVQ`,
         },
         {
           name: `twitter:card`,
@@ -57,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.social.twitter,
         },
         {
           name: `twitter:title`,

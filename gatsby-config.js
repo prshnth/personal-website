@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Prashanth Reddy`,
-    description: `Details about my career, projects and life.`,
+    description: `Hey! I'm Prashanth Reddy, I'm a Full Stack Developer and this is my personal website!`,
     author: `@prshnthrddy`,
+    website: `https://www.prshnthrddy.com/`,
+    social: {
+      twitter: `prshnthrddy`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
