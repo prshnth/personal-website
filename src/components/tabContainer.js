@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const TabContainer = styled.div`
   margin-top: 20px;
@@ -19,6 +21,10 @@ const TabButton = styled.button`
   font-size: 14px;
   outline: none;
   box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 1);
+  a {
+    text-decoration: none;
+    color: #d5d0e5;
+  }
   &[aria-selected="true"] {
     background: #7464be;
   }
@@ -53,11 +59,9 @@ const Tabs = () => {
         </TabButton>
         <TabButton
           role="tab"
-          onClick={() => setTab("career")}
-          aria-selected={selectedTab === "career"}
-          id="career"
+          id="resume"
         >
-          Career
+          <a href='/prashanth-reddy-resume.pdf' target='_blank' rel="noreferrer">Resume</a>
         </TabButton>
       </TabList>
       <TabPanel
@@ -78,19 +82,13 @@ const Tabs = () => {
         hidden={selectedTab !== "websiteStack"}
       >
         <p>
-          I built this Website with Gatsby.js which comes with React and
+          I built this Website with Gatsby.js which comes with React, Routing and
           GraphQL.
         </p>
         <p>For styling I used styled-components.</p>
-      </TabPanel>
-      <TabPanel
-        role="tabpanel"
-        aria-labelledby="career"
-        hidden={selectedTab !== "career"}
-      >
-        <p>
-          I currently work as a Frontend Developer at Paychex, Inc. If you would
-          like to know more about my complete journey, see here
+        <p>Here is the source code: <a href='https://github.com/prshnth/personal-website' style={{color: 'inherit'}} target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="x" />
+          </a>
         </p>
       </TabPanel>
     </TabContainer>

@@ -2,6 +2,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
+  const resumeContainer = require.resolve(`./src/components/resumeContainer.js`)
 
   const result = await graphql(`
     {
@@ -35,5 +36,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         slug: node.frontmatter.slug,
       },
     })
+  })
+
+  createPage({
+    path: `/prashanth-reddy-resume.pdf`,
+    component: resumeContainer
   })
 }
