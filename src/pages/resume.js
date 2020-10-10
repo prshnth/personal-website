@@ -11,8 +11,9 @@ const ResumeContainer = styled.div`
   min-height: 100vh;
   display: flex;
 `
-const Resume = styled.iframe`
+const Resume = styled.embed`
   flex: 1 1 auto;
+  min-width: 300px;
 `
 
 export default () => {
