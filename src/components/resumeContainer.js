@@ -9,14 +9,14 @@ const ResumeContainer = styled.div`
   min-height: 100vh;
   display: flex;
 `
-const Resume = styled.iframe`
-  width: 100%;
+const Resume = styled.embed`
+  flex: 1 1 auto;
 `
 
 export default () => {
   return (
     <ResumeContainer>
-      <Resume src={resume} />
+      <Resume src={resume} type='application/pdf' />
     </ResumeContainer>
   )
 }
