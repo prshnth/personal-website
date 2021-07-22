@@ -46,7 +46,7 @@ const AboutMeCard = () => (
         height="100"
       />
     </ProfileImage>
-    <Description>Prashanth Reddy Kuchanpally</Description>
+    <Description>Prashanth Reddy</Description>
     <Tabs />
   </Container>
 )
